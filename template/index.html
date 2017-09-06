@@ -3,9 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>{{ name }}</title>
+    <link rel="stylesheet" href="./dist/css/main.css">
+
+    {{#if_in_object "material_design" social}}
+      <link rel="stylesheet" href="https://unpkg.com/vue-material@0.7.1/dist/vue-material.css">
+    {{/if_in_object}}
   </head>
   <body>
     <div id="app"></div>
-    <script src="/dist/build.js"></script>
+    <script src="./dist/js/build.js"></script>
   </body>
 </html>
